@@ -110,6 +110,75 @@ java SortNumbers
 ---
 
 # 2️⃣ Find & Replace Program
+```java
+import java.util.*;
+import java.io.*;
+public class FindReplaceText
+{
+int i,j,n;
+String[] s1=new String[20];
+String s2,s3;
+DataInputStream dr=new DataInputStream(System.in);
+public void getInput() throws Exception
+{
+System.out.println("Enter Number of strings");
+n=Integer.parseInt(dr.readLine());
+System.out.println("Enter strings");
+for(i=0;i<n;i++)
+{
+s1[i]=dr.readLine();
+}
+}
+public void findText() throws Exception
+{
+boolean val=false;
+System.out.println("Enter the String to Search");
+s2=dr.readLine();
+for(i=0;i<n;i++)
+{
+val=s1[i].equals(s2);
+if(val==true)
+{
+break;
+}
+}
+if(val==true)
+System.out.println("String Found");
+else
+System.out.println("String not Found");
+}
+public void replaceText() throws Exception
+{
+boolean val=false;
+System.out.println("Enter the String to Search and Replace");
+System.out.println("String to Search");
+s2=dr.readLine();
+System.out.println("String to Replace");
+s3=dr.readLine();
+for(i=0;i<n;i++)
+{
+val=s1[i].equals(s2);
+if(val==true)
+{
+s1[i]=s3;
+break;
+}
+}
+if(val==true)
+{
+System.out.println("String Found and replaced");
+}
+else
+System.out.println("String not Found");
+}
+public static void main(String args[]) throws Exception
+{
+FindReplaceText fr=new FindReplaceText();
+fr.getInput();
+fr.findText();
+fr.replaceText();
+}
+}
 
 ## Save File As:
 ```

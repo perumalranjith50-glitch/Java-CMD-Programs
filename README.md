@@ -314,7 +314,41 @@ java AreaRect
 ---
 
 # 5️⃣ Student Grade Program
-
+```java
+public class StudentGrade
+{
+public static void main(String args[])
+{
+String name,grade="";
+int rollno,m1,m2,m3,m4,m5,total,avg;
+rollno=Integer.parseInt(args[0]);
+name=args[1];
+m1=Integer.parseInt(args[2]);
+m2=Integer.parseInt(args[3]);
+m3=Integer.parseInt(args[4]);
+m4=Integer.parseInt(args[5]);
+m5=Integer.parseInt(args[6]);
+total=m1+m2+m3+m4+m5;
+avg=total/5;
+if(avg>=90)
+{
+grade="A";
+}
+else if(avg>70&&avg<90)
+{
+grade="B";
+}
+else if(avg>50&&avg<70)
+{
+grade="B";
+}
+System.out.println();
+System.out.println("StudentName Rollno Total Percentage Grade");
+System.out.println();
+System.out.println(" "+name+" "+ rollno+" "+total+" "+avg+" +grade);
+}
+}
+```
 ## Save File As:
 ```
 StudentGrade.java

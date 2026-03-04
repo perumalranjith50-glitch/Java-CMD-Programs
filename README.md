@@ -266,7 +266,36 @@ java Calc
 ---
 
 # 4️⃣ Area of Rectangle (Constructor)
-
+```java
+import java.util.*;
+import java.io.*;
+public class AreaRect
+{
+int l,b,a;
+AreaRect()
+{
+l=10;
+b=10;
+}
+AreaRect(int l1,int b1)
+{
+l=l1;
+b=b1;
+}
+void dispArea()
+{
+a=l*b;
+System.out.println("The area for length lenght= "+l+"b="+b+" is "+a );
+}
+public static void main(String args[])
+{
+AreaRect ar1=new AreaRect();
+AreaRect ar2=new AreaRect(20,20);
+ar1.dispArea();
+ar2.dispArea();
+}
+}
+```
 ## Save File As:
 ```
 AreaRect.java

@@ -113,7 +113,9 @@ java SortNumbers
 
 ## Save File As:
 ```
-FindReplaceText## Compile:
+FindReplaceText.java
+```
+## Compile:
 ```cmd
 javac FindReplaceText.java
 ```

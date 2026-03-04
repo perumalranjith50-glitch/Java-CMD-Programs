@@ -345,7 +345,7 @@ grade="B";
 System.out.println();
 System.out.println("StudentName Rollno Total Percentage Grade");
 System.out.println();
-System.out.println(" "+name+" "+ rollno+" "+total+" "+avg+" +grade);
+System.out.println(" "+name+" "+ rollno+" "+total+" "+avg+" "+grade+" ");
 }
 }
 ```
@@ -449,11 +449,13 @@ System.out.println("distance travelled is "+distance);
 }
 public void speed(){
 int speed=distance/100;
+System.out.println("speed is " + speed);
 }
 }
 class MultipleInheritanceUsingInterface{
 public static void main(String args[]){
 System.out.println("Vehicle");
+Vehicle obj = new Vehicle();
 obj.distance();
 obj.speed();
 }
@@ -483,7 +485,7 @@ class TestMultiPriority1 extends Thread
 public void run()
 { 
 System.out.println("running thread name is:"+Thread.currentThread().getName()); 
-System.out.println("running thread priority is:"+Thread.currentThread().getPriority)); 
+System.out.println("running thread priority is:"+Thread.currentThread().getPriority()); 
 } 
 public static void main(String args[])
 { 

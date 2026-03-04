@@ -372,7 +372,49 @@ java StudentGrade RollNo Name M1 M2 M3 M4 M5
 ---
 
 # 6️⃣ Draw Objects (Inheritance & Polymorphism)
-
+```java
+import java.io.*;
+import java.util.*;
+class Circle
+{
+int r=10;
+}
+class Triangle extends Circle
+{
+int l=10,b=10,h=20;
+}
+class Square extends Triangle
+{
+int a=5;
+}
+public class DrawObjects extends Square
+{
+int area;
+public void draw()
+{
+System.out.println("Circle drawn with radius "+r);
+}
+public void draw(int b)
+{
+a=b;
+System.out.println("Square drawn with side= "+a);
+}
+public void draw(int a1,int b1,int c1)
+{
+l=a1;
+b=b1;
+h=c1;
+System.out.println("Triangle drawn with l= "+l+" b= "+b+" h= "+h);
+}
+public static void main(String args[])
+{
+DrawObjects d=new DrawObjects();
+d.draw();
+d.draw(10,10,10);
+d.draw(40);
+}
+}
+```
 ## Save File As:
 ```
 DrawObjects.java

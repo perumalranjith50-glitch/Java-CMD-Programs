@@ -476,7 +476,7 @@ java MultipleInheritanceUsingInterface
 
 ---
 
-# 8️⃣ Thread with 
+# 8️⃣ Thread with priority
 ```java
 class TestMultiPriority1 extends Thread
 { 

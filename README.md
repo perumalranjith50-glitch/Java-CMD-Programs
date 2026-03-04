@@ -37,6 +37,60 @@ Now save all `.java` files inside this folder.
 ---
 
 # 1️⃣ Sort Numbers Program
+```
+import java.io.*;
+import java.util.*;
+public class SortNumbers
+{
+int i,j,temp,n;
+int a[]=new int[100];
+public void getInput() throws Exception
+{
+DataInputStream dr=new DataInputStream(System.in);
+System.out.println("Enter how many Numbers to sort");
+n=Integer.parseInt(dr.readLine());
+System.out.println("Enter the Numbers ");
+for(i=0;i<n;i++)
+{
+a[i]=Integer.parseInt(dr.readLine());
+}
+System.out.println("Numbers before Sorting");
+for(i=0;i<n;i++)
+{
+System.out.println(a[i]);
+}
+}
+public void sort()
+{
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+if(a[i]<a[j])
+{
+temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+}
+}
+}
+}
+public void dispResult()
+{
+System.out.println("The Sorted Numbers in ascending order are");
+{
+System.out.println(a[i]);
+}
+}
+public static void main(String args[]) throws Exception
+{
+SortNumbers s=new SortNumbers();
+s.getInput();
+s.sort();
+s.dispResult();
+}
+}
+```
 
 ## Save File As:
 ```
@@ -59,10 +113,7 @@ java SortNumbers
 
 ## Save File As:
 ```
-FindReplaceText.java
-```
-
-## Compile:
+FindReplaceText## Compile:
 ```cmd
 javac FindReplaceText.java
 ```

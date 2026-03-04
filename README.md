@@ -179,7 +179,7 @@ fr.findText();
 fr.replaceText();
 }
 }
-
+```
 ## Save File As:
 ```
 FindReplaceText.java
@@ -197,7 +197,57 @@ java FindReplaceText
 ---
 
 # 3️⃣ Calculator Program
-
+```java
+public class Calc
+{
+int a=10,b=5,c;
+public void add()
+{
+c=a+b;
+System.out.println("The Result of add "+c);
+}
+public void sub()
+{
+c=a-b;
+System.out.println("The Result of Subraction "+c);
+}
+public void mult()
+{
+c=a*b;
+System.out.println("The Result of Multiplication "+c);
+}
+public void div()
+{
+c=a/b;
+System.out.println("The Result of Division "+c);
+}
+public void modulo()
+{
+c=a%b;
+System.out.println("The Result of Modulus "+c);
+}
+public void square()
+{
+c=a*a;
+System.out.println("The Result of Square "+c);
+}
+public void cube()
+{
+c=a*a*a;
+System.out.println("The Result of Cube "+c);
+}
+public static void main(String args[])
+{
+Calc c=new Calc();
+c.add();
+c.sub();
+c.mult();
+c.div();
+c.modulo();
+c.square();
+c.cube();
+}}
+```
 ## Save File As:
 ```
 Calc.java

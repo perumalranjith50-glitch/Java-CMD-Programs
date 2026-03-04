@@ -240,5 +240,5 @@ JavaPrograms/
 
 ---
 
-👨‍💻 Author: Your Name  
+👨‍💻 Author: Ranjith Kumar p  
 📌 Basic Java Programs using CMD

@@ -37,7 +37,7 @@ Now save all `.java` files inside this folder.
 ---
 
 # 1️⃣ Sort Numbers Program
-```
+```java
 import java.io.*;
 import java.util.*;
 public class SortNumbers
